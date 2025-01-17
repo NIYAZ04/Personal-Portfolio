@@ -1,393 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mir Niyazul Haque Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Mir Niyazul Haque</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+    <header>
+        <div class="logo">Mir Niyazul Haque</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-       
-        <li><a href="#Articles">Articles</a></li>
-        
-        <li><a href="#contact">Contact</a></li>
-        
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Mir Niyazul Haque</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+    <section class="hero" id="about">
+        <h1>Hi, I'm Mir Niyazul Haque</h1>
+        <p>A passionate Full-Stack Developer and final-year B.Tech IT student at KIIT University.</p>
+        <a href="#contact">Contact Me</a>
+        <a href="https://drive.google.com/file/d/1mSlETjDnJSvwbIQiNYTKTmJPTuXM_m1i/view?usp=sharing"target="_blank">Resume</a>
+    </section>
 
-
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/imageedit_1_7876164949.png" alt="Mir Niyazul Haque picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Mir Niyazul Haque</h1>
-      <p class="section__text__p2"></p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/NiyazResume.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/mir-niyazul-haque/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/NIYAZ04'" />
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/trythisagain.jpg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>SKILLS</h3>
-            <p><br />Full Stack Developer</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p><b>KiiT University</b><br />BTech (Information Technology)</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            <b>I am a motivated third-year student at KiiT University, pursuing a B.Tech in Information Technology. My passion lies in problem-solving and exploring cutting-edge technologies to create impactful solutions. I am deeply interested in the fields of Android and Web development and am actively exploring these areas to expand my skill set. I am enthusiastic about the opportunities that await and eagerly anticipate connecting with professionals in this dynamic industry.</b>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="Skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">SKILLS</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Full-Stack Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                                 
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-              <h3>CSS</h3>
-                           
-              </div>
-            </article>
-            
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React.Js</h3>
-                
-              </div>
-            </article>
-            
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node.js</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Jetpack Compose</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                
-              </div>
-            </article>
-          </div>
-        </div>
-
-
-
-        <div class="details-container">
-          <h2 class="experience-sub-title">Programming Languages</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C Language</h3>
-       
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>C++ </h3>
-               
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Kotlin </h3>
-     
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-       
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-       
-              </div>
-            </article>
-          </div>
-        </div>
-
-
-        <div class="details-container">
-          <h2 class="experience-sub-title">Database / Platforms /  VC</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SQL</h3>
-        
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Android Studio</h3>
-               
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git/Github</h3>
-                
-              </div>
-            </article>
-            
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Linux</h3>
-        
-              </div>
-            </article>
-          </div>
-        </div>
-
-
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-
-  <!--Projects Section-->
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        
-        
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Padosan.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Padosan Restaurant</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/NIYAZ04/PadosanRestaurant'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://padosan-restaurant.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-
-
-
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/Sorting2.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Sorting Visualizer</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/NIYAZ04/SortingVisualizer'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://niyaz04.github.io/SortingVisualizer/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/ExpenseEaseReal.jpg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">ExpenseEase</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/NIYAZ04/ExpenseEase'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-       
-
-
-
-
-
-
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-<!--  Article section -->
-
-<section id="Articles">
-  
-  <h1 class="title">Tech Articles</h1>
-  <div class="Articlesboundary">
-    <div class="contact-info-container">
-      <img src="./assets/jetpackcompose22small.png" alt="Article icon" class="icon contact-icon email-icon" />
-      <p><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-i-5716effd9280" target="_blank" >Simplifying UI / UX with Jetpack Compose Part I</a></p>
-      
-    </div>
-    </div>
-
-    <div class="Articlesboundary">
-      <div class="contact-info-container">
-        <img src="./assets/jetpackcompose22small.png" alt="Article icon" class="icon contact-icon email-icon" />
-        <p><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-ii-c7dc7b11f03a" target="_blank" >Simplifying UI / UX with Jetpack Compose Part II</a></p>
-        
-      </div>
-      </div>
-      <div class="Articlesboundary">
-        <div class="contact-info-container">
-          <img src="./assets/jetpackcompose22small.png" alt="Article icon" class="icon contact-icon email-icon" />
-          <p><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-iii-4c63df3fd59e"target="_blank" >Simplifying UI / UX with Jetpack Compose Part III</a></p>
-          
-        </div>
-        </div>
-</section>
-<!--  Article section Closing  -->
-
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:niyazhaque098@gmail.com">niyazhaque098@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/mir-niyazul-haque/">LinkedIn</a></p>
-      </div>
-      
-      <div class="contact-info-container">
-        <img src="./assets/calendly.png" alt="Calendly Icon" class="icon contact-icon email-icon" />
-        <p><a href="https://calendly.com/mirniyazulhaque/mirniyazulhaque?month=2023-12">Calendly</a></p>
-    </div>
-
-   
-  </section>
-
-
-
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#Articles">Articles</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>Spring Boot</li>
+            <li>VSCode</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Linux</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+            <li>PostgreSQL</li>
         </ul>
-      </div>
-    </nav>
-   
-  </footer>
-  <script src="script.js"></script>
-</body>
+    </section>
 
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+               
+                <img src="assets/project1Padosan.png" alt="Project 1">
+                <div class="project-info">
+                    <a href="https://thepadosan.com" target="_blank">  
+                    <h3>The Padosan</h3>
+                    </a>
+                    <p>Developed a responsive website for Padosan Restaurant, showcasing its offerings and boosting sales by 20%.
+                         Integrated a seamless ordering system with PhonePe Payment gateway 
+                         for secure transactions and built an admin 
+                         panel for efficient user and order management.</p>
+                </div>
+           
+            </div>
+            <div class="project">
+                <img src="assets/project2Opensourceify.png" alt="Project 2">
+                <div class="project-info">
+                    <a href="https://OpenSourceify.co" target="_blank">  
+                        <h3>OpenSourceify</h3>
+                        </a>
+                    <p>Launched OpenSourceify, an open-source platform for users to upload and collaborate on projects. 
+                        Included a learning module with multiple programming languages,
+                         enhancing user engagement and increasing time spent on the platform by 30%.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/Project3Visualizer.png" alt="Project 3">
+                <div class="project-info">
+                    <a href="https://niyaz04.github.io/SortingVisualizer/" target="_blank">  
+                        <h3>Sorting visualize</h3>
+                        </a>
+                    <p>Created a dynamic sorting algorithm visualizer using HTML, CSS, and JavaScript, allowing users to visualize and analyze algorithms
+                         like Merge Sort, Quick Sort, and Bubble Sort.
+                         Users can customize array sizes and animation speeds for in-depth learning.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="assets/project4House.png" alt="Project 4">
+                <div class="project-info">
+
+                   
+                    <a href=" https://github.com/NIYAZ04/House-Prices-Prediction-ML" target="_blank">  
+                        <h3>House Price Prediction</h3>
+                        </a>
+                    <p> Developed a machine learning model using Python and Linear Regression to predict house prices with 85% accuracy.
+                         Integrated factors like location, area, and number of bedrooms to help users make informed real estate decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles" id="articles">
+        <h2 class="section-title">Articles</h2>
+        <ul>
+            <li><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-i-5716effd9280" target="_blank">Simplifying UI / UX with Jetpack Compose Part I</a></li>
+            <li><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-ii-c7dc7b11f03a"target="_blank">Simplifying UI / UX with Jetpack Compose Part II</a></li>
+            <li><a href="https://medium.com/@niyazhaque098/simplifying-ui-with-jetpack-compose-part-iii-4c63df3fd59e"target="_blank">Simplifying UI / UX with Jetpack Compose Part III</a></li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <ul>
+            <li>Email: <a href="mailto:niyazhaque098@gmail.com">niyazhaque098@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mir-niyazul-haque/"target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/NIYAZ04"target="_blank">GitHub</a></li>
+            <li><a href="https://calendly.com/mirniyazulhaque/mirniyazulhaque?month=2023-12"target="_blank">Calendy</a></li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        &copy; 2025 Mir Niyazul Haque. All Rights Reserved. <a href="#">Back to Top</a>
+    </footer>
+</body>
 </html>
